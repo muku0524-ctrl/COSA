@@ -1,0 +1,36 @@
+---
+description: Obsidian vault writing rules
+globs:
+  - "**/*.md"
+alwaysApply: true
+---
+
+# COSA Vault Rules
+
+個人ナレッジ vault。本文は日本語、フォルダ名・タグは日本語。
+
+## 書き込みルール
+
+- `.md` ファイルは 1 行目から YAML frontmatter（`---`）必須
+- 日付: `YYYY-MM-DD`
+- SYNCED 対象（`system/`, `skills/`, `memory/`）は frontmatter 直後に `<!-- SYNCED: DO NOT EDIT -->` を置く
+- 内部リンク: `[[フォルダ/ファイル名]]`
+
+## 命名規則
+
+| 種別 | フォルダ | ファイル名 |
+|------|---------|-----------|
+| daily | `日記/` | `YYYY-MM-DD.md` |
+
+## 禁止事項
+
+- 顧客名・取引先名の外部送信禁止
+- 価格・経営判断の AI 単独実行禁止
+- メール / Slack の無断送信禁止（下書きまで可）
+- `rm -rf` / `git push --force` / `git reset --hard` の無断実行禁止
+
+## ふるまい
+
+- 簡潔・構造化、図解優先
+- 曖昧な指示は要件を逆提示してから着手
+- 提案は Pros / Cons / 第 3 の視点を併記
