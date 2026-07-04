@@ -1,7 +1,7 @@
 ---
 type: schema
 title: COSA Vault Rules
-updated: 2026-05-24
+updated: 2026-07-04
 ---
 
 # COSA Vault Rules
@@ -12,7 +12,7 @@ updated: 2026-05-24
 
 | 区分 | パス | 編集 |
 |------|------|------|
-| 編集可 | `日記/`, `templates/` | ユーザー・LLM とも編集可 |
+| 編集可 | `日記/`, `templates/`, `メモ/` | ユーザー・LLM とも編集可 |
 | 自動同期のみ | `system/`, `skills/`, `memory/` | 手動編集禁止（`<!-- SYNCED: DO NOT EDIT -->` 付き） |
 | ルール定義 | `CLAUDE.md`, `.cursor/rules/` | セットアップ時のみ変更 |
 
@@ -47,6 +47,7 @@ updated: YYYY-MM-DD
 |------|---------|-----------|-----|
 | daily | `日記/` | `YYYY-MM-DD.md` | `日記/2026-05-24.md` |
 | template | `templates/` | `{種別}-note.md` | `templates/daily-note.md` |
+| memo | `メモ/` | 内容に応じた名前 | `メモ/4ペイン画面の開き方.md` |
 | synced | `system/`, `skills/`, `memory/` | 内容に応じた名前 | `system/global-rules.md` |
 
 ## 禁止事項
