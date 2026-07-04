@@ -1,0 +1,15 @@
+{
+  "//": "このファイルは設定例です。中身を ~/.claude/settings.json にマージし、パスを自分の vault に合わせてください。VAULT_DIR とスクリプトの絶対パスを実際の場所に置き換えること。",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "VAULT_DIR=\"/Users/akikotaniguchi/Documents/COSA\" bash \"/Users/akikotaniguchi/Documents/COSA/scripts/on-session-end.sh\""
+          }
+        ]
+      }
+    ]
+  }
+}
